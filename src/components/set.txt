@@ -1,0 +1,254 @@
+yar<header class="header-section">
+        <div class="container">
+                <!-- logo -->
+            <a href="index.html" class="school-logo"><i class="fa fa-graduation-cap"></i>Incarnate Word Academy</a>
+            <div class="nav-switch d-md-none d-block">
+                    <a href="#" onclick="openSlideMenu()"><i class="fa fa-bars menu" aria-hidden="true"></i></span></a>
+            </div>
+            <div class="header-info d-none d-md-block">
+                <div class="item">
+                    <i class="fa fa-envelope"></i>
+                    <p><span>Email</span>incarnateschool@gmail.com</p>
+                </div>
+                <div class="item">
+                    <i class="fa fa-phone"></i>
+                    <p><span>Call us</span>+234 81337654</p>
+                </div>
+            </div>
+        </div>
+    </header>
+        <!-- nav-section -->
+        <nav class="nav-section d-none d-md-block">
+            <div class="container">
+                <div class="nav-right">
+                    <a class="btn btn-outline-info">School Portal <i class="fa fa-caret-down"></i></a>
+                </div>
+                <ul class="main-nav">
+                    <li class="nav-item">
+                        <router-link to="./about">ABOUT </router-link>
+                      </li>
+                    
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+           <router-view></router-view>
+        </div>
+     
+        <!-- <div id="side-menu" class="side-nav">
+                <a href = "#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+                <a href="#">School Portal</a>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="news.html">News & Events</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div> -->
+  </div>
+    
+
+</template>
+<script>
+
+  export default{
+    data(){
+      return{
+    //   menus:[ {title:'Home', link:'./Home'},
+    //    {title:'About', link:'./About'},
+    //    {title:'News', link:'./News'},
+    //    {title:'Gallery', link:'./Gallery'},
+    //    {title:'Contact', link:'./Contact'},
+    //   ],
+     
+      }
+    }
+  }
+</script>
+
+
+
+body{
+    line-height: 1.6;
+    
+   
+  
+}
+
+.bg-dark{
+    background-color: pink !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  
+}
+ul, li{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+ .nav-switch {
+    float: right;
+    margin-top: 10px;
+    background-color: #E9258F ;
+	padding: 8px;
+    border-radius: 2px;   
+    margin-right: 40px;
+}
+.nav-switch a i{
+    font-size:25px;
+    color: white;
+}
+.nav-switch a{
+    text-decoration: none;
+}
+.nav-section {
+    /* background-color: #E9258F !important; */
+    height: 60px !important;
+   
+}
+.nav-section .nav-right {
+    float: right;
+  
+}
+.main-nav {
+    list-style: none;
+    
+    /* margin-top: 14px; */
+}
+.main-nav li {
+    display: inline-block;
+    padding-top: 6px !important;
+}
+.main-nav li a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    text-decoration:none;
+    color: #000;
+    font-size: 12px;
+	/* text-transform: uppercase; */
+	font-weight: 600;
+	-webkit-transition: all 0.4s ease 0s;
+	-o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    
+}
+.main-nav li a:hover{
+    color: skyblue !important;
+}
+.login-button{
+    background-color: #fff !important;
+    border:2px solid skyblue !important;
+    color:skyblue !important;
+}
+.login-button:hover{
+    background-color: skyblue !important;
+    border:2px solid skyblue !important;
+    color:#fff !important;
+}
+.signup-button:hover{
+    background-color: skyblue !important;
+    border:2px solid skyblue !important;
+    color:#fff !important;
+}
+.signup-button{
+    background-color: #fff !important;
+    border:2px solid skyblue !important;
+    color:skyblue !important;
+}
+
+    /* side-nav */
+    .side-nav{
+        height:100%;
+        width:0;
+        position:fixed;
+        z-index:2;
+        top:0;
+        left:0;
+        /* background-color: #E9258F; */
+        opacity:0.9;
+        overflow-x: hidden;
+        padding-top:60px;
+        transition:0.5s;
+    }
+    .side-nav a{
+       padding:10px 10px 10px 30px;
+       text-decoration: none;
+       font-size:18px;
+       font-weight: 600;
+       color:#ccc;
+       display:block;
+       transition:0.3s;
+    }
+    .side-nav a:hover{
+        color:#fff;
+        background-color:#6D5D49;
+       text-decoration:none;
+    }
+    .side-nav .btn-close{
+        position:absolute;
+        top:0;
+        right:22px;
+        padding-top: 2px;
+        padding-left: 10px;
+        font-size:36px;
+        margin-left:50px;
+    }
+    .nav-item-mobile{
+        list-style : none !important;
+      
+    }
+    .logo{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+       
+    }
+    .carousel-inner{
+        margin-top: -540px !important;
+    }
+    .banner{
+      /* background: #E9258F; */
+      margin-top: 10px !important;
+      height: 40vh !important;
+      width: 100% !important;
+      background-size: cover;
+    }
+    .search-form form{
+        margin: 0 30% auto !important;
+        /* width: 100%; */
+        padding-top:120px;
+    }
+    .search-form form input{
+        width:400px !important;
+    }
+
+
+
+      box-shadow: 10px 10px 10px 10px rgb(0,0,0,.3);
+
+
+
+
+       <nav class="nav-section">
+            <div class="container">
+                 
+                <ul class="main-nav nav-right d-none d-md-block">
+                   <li v-for="item in items" :key="item.id" class="nav-item">
+                    <router-link class="nav-link" :to="`${item.page}`">{{item.text}}</router-link>
+                </li>
+                  
+                <li class="nav-item">
+                    <router-link class="nav-link" to="/contact">Contact</router-link>
+                </li>
+                <li class="nav-item">
+                    <router-link class="nav-link" to="/signIn"><button class="btn btn login-button">Login</button></router-link>
+                </li>
+              
+                    <li class="nav-item">
+                        <router-link class="nav-link" to="/signUp"><button class="btn btn signup-button">Sign Up</button></router-link>
+
+                     </li>
+                
+                </ul>
+                    <div class="logo pt-3 pr-5">
+                    <h2>rexio</h2>
+                </div>
+                 
+              
+            </div>
+        </nav>
